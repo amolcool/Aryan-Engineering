@@ -127,7 +127,7 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif;line-height:1.15;color:var
 .nav-toggle.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
 
 /* ---------- Hero ---------- */
-.hero{position:relative;min-height:92vh;display:flex;align-items:center;color:#fff;overflow:hidden}
+.hero{position:relative;min-height:92vh;min-height:92dvh;display:flex;align-items:center;color:#fff;overflow:hidden}
 .hero__video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .hero__overlay{position:absolute;inset:0;z-index:1;background:
   linear-gradient(110deg,rgba(8,21,46,.92) 0%,rgba(12,30,66,.80) 45%,rgba(12,30,66,.45) 100%);}
@@ -310,19 +310,22 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif;line-height:1.15;color:var
 }
 @media (max-width:860px){
   .topbar{display:none}
-  .nav{position:fixed;top:0;right:-100%;width:78%;max-width:320px;height:100vh;flex-direction:column;align-items:stretch;background:var(--surface);padding:90px 24px 30px;gap:6px;box-shadow:-10px 0 40px rgba(0,0,0,.28);transition:right .35s var(--ease);z-index:190}
+  .nav{position:fixed;top:0;right:-100%;width:80%;max-width:320px;height:100vh;height:100dvh;flex-direction:column;align-items:stretch;background:var(--surface);padding:90px 24px 30px;gap:6px;box-shadow:-10px 0 40px rgba(0,0,0,.28);transition:right .35s var(--ease);z-index:190;overflow-y:auto}
   .nav.open{right:0}
   .nav>a{padding:13px 14px;border-radius:10px;font-size:1rem}
   .nav__cta{margin:10px 0 0;text-align:center}
   .nav-toggle{display:flex}
-  .hero{min-height:88vh}
-  .hero__content{padding:70px 22px}
+  /* Phones: swap heavy autoplay video for a fast static hero image */
+  .hero{min-height:84vh;min-height:84dvh;background:#0b1b3a url("https://images.hungama.com/008/7D5/001/WhatsApp_Image_2026-06-07_at_10.34.20.jpeg") center/cover no-repeat}
+  .hero__video{display:none}
+  .hero__content{padding:64px 22px}
   .hero__badges{gap:24px}
   .footer__grid{grid-template-columns:1fr 1fr;gap:28px}
 }
 @media (max-width:560px){
   .section{padding:60px 0}
-  .product-grid,.gallery-grid,.industries__grid,.why__grid{grid-template-columns:1fr}
+  .product-grid,.industries__grid,.why__grid{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:1fr 1fr;gap:12px}   /* keep video tiles app-like, 2-up */
   .field-row{grid-template-columns:1fr}
   .footer__grid{grid-template-columns:1fr;text-align:left}
   .stats__grid{gap:16px}
@@ -330,6 +333,16 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif;line-height:1.15;color:var
   .testi__card blockquote{font-size:1.08rem}
   .cta-banner__inner{flex-direction:column;text-align:center}
   .hero__title{font-size:2.1rem}
+  .hero__sub{font-size:1rem}
+  .container{padding:0 18px}
+  .lightbox__bar{top:12px;right:14px}
+  .wa-float{width:54px;height:54px;right:16px;bottom:16px}
+  .to-top{right:17px;bottom:80px}
+}
+/* Very small screens: drop the wordmark so logo + theme toggle + menu fit */
+@media (max-width:400px){
+  .brand__text{display:none}
+  .header__right{gap:8px}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;scroll-behavior:auto!important}
