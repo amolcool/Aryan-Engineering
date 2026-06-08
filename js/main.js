@@ -115,13 +115,21 @@
     var lb = $("#lightbox"), vid = $("#lightboxVideo"), close = $("#lightboxClose"), mute = $("#lightboxMute");
     if (!lb) return;
     function setMuted(state) { vid.muted = state; lb.classList.toggle("is-muted", state); }
-    document.addEventListener("click", function (e) {
-      var t = e.target.closest(".gtile"); if (!t) return;
+    function openFrom(t) {
       vid.src = t.getAttribute("data-src");
       lb.classList.add("open"); lb.setAttribute("aria-hidden", "false");
       document.body.style.overflow = "hidden";
       setMuted(false);              /* open with sound on; user can mute */
       vid.play().catch(function () { setMuted(true); vid.play().catch(function () {}); });
+    }
+    document.addEventListener("click", function (e) {
+      var t = e.target.closest("[data-src]"); if (!t) return;
+      openFrom(t);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key !== "Enter" && e.key !== " ") return;
+      var t = document.activeElement;
+      if (t && t.hasAttribute && t.hasAttribute("data-src")) { e.preventDefault(); openFrom(t); }
     });
     function shut() {
       lb.classList.remove("open"); lb.setAttribute("aria-hidden", "true");
