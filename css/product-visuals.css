@@ -114,14 +114,11 @@
 .assembly-part{outline:none;cursor:pointer}
 .assembly-part:focus-visible{outline:2px dashed #ed713b;outline-offset:4px}
 
-/* 3D cashew-shell + wet-waste clusters in the biomass illustration */
+/* 3D cashew-shell cluster in the biomass illustration */
 .feed-extra{position:absolute;inset:0;pointer-events:none;overflow:visible}
 .feed-extra g{transform-box:fill-box;animation:biomassFloat 6.5s ease-in-out infinite}
-.feed-extra .fx-waste{animation-delay:-3s;animation-duration:7.2s}
-.feed-extra .steam{transform-box:fill-box;animation:steamRise 3.2s ease-in-out infinite;opacity:0}
-.feed-extra .steam.s2{animation-delay:-1.6s}
-@keyframes steamRise{0%{opacity:0;translate:0 7px}35%{opacity:.5}100%{opacity:0;translate:0 -11px}}
+
 .feed-extra{z-index:2}
 /* spread feedstock trio: logs up-centre, piles at the front corners */
-.feedstock i:nth-child(-n+4){margin-top:-14px;margin-left:30px;scale:.92}.feedstock i:nth-child(n+5){margin-left:26px}.bio-object{max-width:300px}
-@media(max-width:650px){.feedstock i:nth-child(-n+4){margin-left:2px;margin-top:-30px;scale:.68}.feedstock i:nth-child(n+5){margin-left:0;margin-top:-26px;scale:.68}.fx-cashew,.fx-waste{transform-box:fill-box;transform-origin:50% 100%}.fx-cashew{transform:translate(17px,125px) scale(1.3)}.fx-waste{transform:translate(70px,140px) scale(1.3)}}
+.feedstock i:nth-child(-n+4){margin-top:-14px;margin-left:52px;scale:.95}.feedstock i:nth-child(n+5){margin-left:48px}.bio-object{max-width:300px}
+@media(max-width:650px){.feedstock i:nth-child(-n+4){margin-left:2px;margin-top:-30px;scale:.68}.feedstock i:nth-child(n+5){margin-left:0;margin-top:-26px;scale:.68}.fx-cashew{transform-box:fill-box;transform-origin:50% 100%}.fx-cashew{transform:translate(17px,125px) scale(1.3)}}

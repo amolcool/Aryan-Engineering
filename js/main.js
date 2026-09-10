@@ -18,7 +18,7 @@
     { name: "Dal Mill Dryer", cat: "food", ico: "🌾", desc: "Efficient moisture control for pulses, boosting mill yield and grain quality." },
     { name: "Wood Pellet Burner", cat: "green", ico: "🔥", desc: "Automatic pellet-fired burner delivering major savings over oil, gas and diesel." },
     { name: "Wood Pellet Machine", cat: "green", ico: "🪵", desc: "Converts wood, agro waste and cashew shells into high-density fuel pellets for clean energy." },
-    { name: "Biomass Pellet Machine", cat: "green", ico: "♻", desc: "Turnkey pelletizing of agro residues, cashew shells and processed wet garbage at scale." },
+    { name: "Biomass Pellet Machine", cat: "green", ico: "♻", desc: "Turnkey pelletizing of agro residues and cashew shells at scale." },
     { name: "Biomass Stove", cat: "green", ico: "🌿", desc: "Clean, fuel-efficient biomass burning for commercial kitchens and process heat." },
     { name: "Pellet Fired Equipment", cat: "green", ico: "🔥", desc: "Pellet-fired heating systems for clean, low-cost industrial process heat." },
     { name: "Aluminium Melting Furnace", cat: "metal", ico: "🔥", desc: "Fast, fuel-efficient melting with precise temperature control for foundries." },
