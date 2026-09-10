@@ -40,3 +40,14 @@ python3 -m http.server 8080
 
 ---
 Maintained for Aryan Engineers - Ajit More.
+
+## Local design study (September 2026)
+
+Run `python3 -m http.server 4177` from this folder.
+
+- Redesigned site: http://localhost:4177/
+- Original repository design: http://localhost:4177/original/
+
+The redesign adds custom conceptual engineering artwork, application-based machinery search, accessible product detail dialogs, a multi-machine shortlist that fills the enquiry form, and a four-stage engineering process section in place of placeholder testimonials. Existing product descriptions, contact details and workshop media remain from the supplied repository. The illustration is conceptual, not a product specification. External photos, video and fonts still require an internet connection.
+
+The enquiry button opens WhatsApp with a draft; visitors must send the message themselves. No enquiry is sent by this site directly.

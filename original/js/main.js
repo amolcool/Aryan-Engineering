@@ -53,13 +53,20 @@
     var sel = $("#product");
     if (!grid) return;
     var html = "";
-    PRODUCTS.forEach(function (p, index) {
-      html += '<article class="pcard reveal" data-cat="' + p.cat + '" data-index="' + index + '">' +
-      '<div class="pcard__top"><span class="pcard__tag">' + catLabel(p.cat) + '</span><svg class="machine-icon" viewBox="0 0 120 95" aria-hidden="true"><path d="M25 27L65 7 100 26 61 47ZM25 27v42l36 20V47m0 42 39-20V26M32 40l21 12v23L32 63ZM69 49l23-12m-23 20 23-12m-23 20 23-12m-23 20 23-12M37 75v13m48-11v13"/><path d="M62 17V4l9-3 7 4v18M35 49l14 8"/><circle cx="43" cy="62" r="3"/></svg><span class="pcard__code">AE / ' + String(index + 1).padStart(2,'0') + '</span></div>' +
-      '<div class="pcard__body"><h3>' + p.name + '</h3><p>' + p.desc + '</p><div class="product-actions"><button class="details-btn" data-details="' + index + '">Explore machine ↗</button><button class="shortlist-btn" data-shortlist="' + index + '" aria-label="Shortlist ' + p.name + '" aria-pressed="false">+</button></div></div></article>';
+    PRODUCTS.forEach(function (p) {
+      var msg = "Hi Aryan Engineers, I am interested in the " + p.name + ". Please share details and a quote.";
+      html +=
+        '<article class="pcard reveal" data-cat="' + p.cat + '">' +
+          '<div class="pcard__top"><span class="pcard__ico">' + p.ico + '</span>' +
+            '<span class="pcard__tag">' + catLabel(p.cat) + '</span></div>' +
+          '<div class="pcard__body">' +
+            '<h3>' + p.name + '</h3><p>' + p.desc + '</p>' +
+            '<a class="pcard__btn" target="_blank" rel="noopener" href="' + waLink(msg) + '">Enquire Now ' +
+              '<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>' +
+          '</div>' +
+        '</article>';
       if (sel) { var o = document.createElement("option"); o.value = p.name; o.textContent = p.name; sel.appendChild(o); }
     });
-    window.aryanProducts = PRODUCTS;
     grid.innerHTML = html;
     grid.querySelectorAll(".pcard__btn svg path").forEach(function (pth) {
       pth.setAttribute("fill", "none"); pth.setAttribute("stroke", "currentColor");
@@ -74,20 +81,16 @@
   function initFilters() {
     var bar = $("#filters");
     if (!bar) return;
-    function applyFilters() {
-      var active = bar.querySelector('.is-active');
-      var filter = active ? active.dataset.filter : 'all';
-      var query = document.querySelector('#machineSearch').value.trim().toLowerCase();
-      var count = 0;
-      document.querySelectorAll('.pcard').forEach(function(card) {
-        var show = (filter === 'all' || card.dataset.cat === filter) && card.querySelector('h3').textContent.toLowerCase().includes(query);
-        card.hidden = !show; if(show) count++;
+    bar.addEventListener("click", function (e) {
+      var b = e.target.closest(".filter"); if (!b) return;
+      bar.querySelectorAll(".filter").forEach(function (x) { x.classList.remove("is-active"); });
+      b.classList.add("is-active");
+      var f = b.getAttribute("data-filter");
+      document.querySelectorAll(".pcard").forEach(function (card) {
+        var show = f === "all" || card.getAttribute("data-cat") === f;
+        card.style.display = show ? "" : "none";
       });
-      document.querySelector('#resultCount').textContent = count + ' MACHINES';
-      document.querySelector('#emptyProducts').hidden = count > 0;
-    }
-    bar.addEventListener('click',function(e){var b=e.target.closest('.filter');if(!b)return;bar.querySelectorAll('.filter').forEach(function(x){x.classList.toggle('is-active',x===b);x.setAttribute('aria-pressed',String(x===b));});applyFilters();});
-    document.querySelector('#machineSearch').addEventListener('input',applyFilters);
+    });
   }
 
   /* ---------- Render gallery ---------- */
@@ -98,10 +101,10 @@
     VIDEOS.forEach(function (v, i) {
       var url = enc(v);
       html +=
-        '<div class="gtile" role="button" tabindex="0" aria-label="Play workshop film ' + (i+1) + '" data-src="' + url + '">' +
+        '<div class="gtile" data-src="' + url + '">' +
           '<video muted playsinline preload="metadata" src="' + url + '#t=0.5"></video>' +
           '<div class="gtile__ov"><span class="gtile__play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></div>' +
-          '<span class="gtile__label">WORKSHOP / ' + String(i + 1).padStart(2,'0') + '</span>' +
+          '<span class="gtile__label">Machine ' + (i + 1) + '</span>' +
         '</div>';
     });
     grid.innerHTML = html;
@@ -188,8 +191,7 @@
       nums.forEach(function (el) {
         var target = parseInt(el.getAttribute("data-count"), 10);
         var suffix = el.getAttribute("data-suffix") || "";
-        if (target === 2016 || matchMedia('(prefers-reduced-motion: reduce)').matches) { el.textContent = target + suffix; return; }
-        var start = null, dur = 1000;
+        var start = null, dur = 1600;
         function step(ts) {
           if (!start) start = ts;
           var p = Math.min((ts - start) / dur, 1);
@@ -259,7 +261,7 @@
         "Requirement: " + encodeURIComponent($("#message").value || "-");
       window.open("https://wa.me/" + WA_NUMBER + "?text=" + msg, "_blank");
       $("#formNote").textContent = "Opening WhatsApp... if it does not open, call us at +91 90754 16505.";
-
+      form.reset();
     });
   }
 

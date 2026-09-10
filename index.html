@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://images.hungama.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <script>
     /* Set theme before paint to avoid flash of wrong theme */
     (function () {
@@ -20,41 +20,28 @@
       } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
     })();
   </script>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css?v=2" /><link rel="stylesheet" href="css/studio.css?v=2" /><link rel="stylesheet" href="css/biofuel.css?v=2" /><link rel="stylesheet" href="css/product-visuals.css?v=5" />
   <link rel="icon" href="https://aryanengineers.net.in/images/logo-new.png" />
 </head>
-<body>
+<body><a class="skip-link" href="#products">Skip to machinery catalogue</a><div class="reading-progress" aria-hidden="true"></div>
 
-  <!-- ===== TOP BAR ===== -->
-  <div class="topbar">
-    <div class="container topbar__inner">
-      <div class="topbar__contact">
-        <a href="tel:+919075416505"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.7.1.4 0 .8-.3 1l-2.2 2.1z"/></svg> +91 90754 16505</a>
-        <a href="mailto:aryanengineers195@gmail.com"><svg viewBox="0 0 24 24"><path d="M3 5h18c.6 0 1 .4 1 1v12c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1V6c0-.6.4-1 1-1zm9 7L4 7v1l8 5 8-5V7l-8 5z"/></svg> aryanengineers195@gmail.com</a>
-      </div>
-      <div class="topbar__meta">
-        <span>Mon - Sat: 9:00 AM to 7:00 PM</span>
-        <a class="topbar__social" href="https://wa.me/919075416505" target="_blank" rel="noopener">WhatsApp Us</a>
-      </div>
-    </div>
-  </div>
-
+<div class="topbar"><div class="container topbar__inner"><span><i class="signal"></i> ENGINEERED IN PUNE. BUILT FOR INDIA.</span><a href="tel:+919075416505">LET’S TALK ENGINEERING &nbsp; +91 90754 16505 ↗</a></div></div>
   <!-- ===== HEADER ===== -->
   <header class="header" id="header">
     <div class="container header__inner">
-      <a href="#home" class="brand">
+      <a href="#biofuel" class="brand">
         <img src="https://aryanengineers.net.in/images/logo-new.png" alt="Aryan Engineers logo" />
-        <span class="brand__text">Aryan<strong>Engineers</strong></span>
+        <span class="brand__text">ARYAN<span>ENGINEERS</span></span>
       </a>
       <div class="header__right">
         <nav class="nav" id="nav">
-          <a href="#home">Home</a>
+          
           <a href="#about">About</a>
           <a href="#products">Products</a>
-          <a href="#gallery">In Action</a>
+          <a href="#biofuel">Bioenergy</a><a href="#gallery">In Action</a>
           <a href="#industries">Industries</a>
           <a href="#contact">Contact</a>
-          <a href="#contact" class="btn btn--primary nav__cta">Get a Quote</a>
+          <a href="#contact" class="btn btn--primary nav__cta">Discuss your project <span>↗</span></a>
         </nav>
         <button class="theme-toggle" id="themeToggle" aria-label="Switch between light and dark theme" title="Toggle theme">
           <svg class="ti-moon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
@@ -67,42 +54,7 @@
     </div>
   </header>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="home">
-    <video class="hero__video" autoplay muted loop playsinline
-           poster="https://images.hungama.com/008/7D5/001/WhatsApp_Image_2026-06-07_at_10.34.20.jpeg">
-      <source src="https://images.hungama.com/008/7D5/001/WhatsApp_Video_2026-06-07_at_10.34.19.mp4" type="video/mp4" />
-    </video>
-    <div class="hero__overlay"></div>
-    <div class="container hero__content">
-      <span class="hero__eyebrow">The Power of Aryan Engineering</span>
-      <h1 class="hero__title">Industrial Machinery,<br /><span>Engineered to Perform.</span></h1>
-      <p class="hero__sub">Boilers, dryers, fryers, furnaces and biomass energy systems - designed, built and supported in-house in Pune since 2016. Unmatched efficiency, indigenous innovation, responsive service.</p>
-      <div class="hero__actions">
-        <a href="#products" class="btn btn--primary btn--lg">Explore Our Machines</a>
-        <a href="#gallery" class="btn btn--ghost btn--lg">
-          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg> Watch In Action
-        </a>
-      </div>
-      <div class="hero__badges">
-        <div class="hero__badge"><strong>16+</strong><span>Machine Models</span></div>
-        <div class="hero__badge"><strong>10+</strong><span>Years of Engineering</span></div>
-        <div class="hero__badge"><strong>100%</strong><span>Made in India</span></div>
-      </div>
-    </div>
-    <a href="#stats" class="hero__scroll" aria-label="Scroll down"><span></span></a>
-  </section>
-
-  <!-- ===== STATS ===== -->
-  <section class="stats" id="stats">
-    <div class="container stats__grid">
-      <div class="stat"><div class="stat__num" data-count="10" data-suffix="+">0</div><p>Years of Engineering</p></div>
-      <div class="stat"><div class="stat__num" data-count="16" data-suffix="+">0</div><p>Machine Models</p></div>
-      <div class="stat"><div class="stat__num" data-count="8" data-suffix="+">0</div><p>Industries Served</p></div>
-      <div class="stat"><div class="stat__num" data-count="100" data-suffix="%">0</div><p>In-House Manufacturing</p></div>
-    </div>
-  </section>
-
+<main><section class="biofuel section" id="biofuel"><div class="container"><div class="bio-heading"><div><span class="eyebrow">THE BIOENERGY STORY / EXPLORE THE PROCESS</span><h1>FROM WHAT’S LEFT.<br><span>TO WHAT’S NEXT.</span></h1></div><p>We build biomass pellet machines, pellet burners and industrial heating equipment.<br>Turn suitable residues into fuel—and fuel into productive heat.</p></div><div class="bio-intro-actions"><a href="#contact" class="btn btn--primary">Plan your biofuel project ↗</a><a href="#home">See how we engineer it ↓</a></div><div class="bio-stage" data-stage="0"><div class="bio-grid"></div><div class="bio-orbit"></div><div class="bio-stage-label"><i></i> BIOMASS → PELLETS → PROCESS HEAT</div><div class="bio-system"><button class="bio-node selected" data-bio="0" aria-label="Explore biomass feedstock"><div class="bio-object feedstock"><i></i><i></i><i></i><i></i><i></i><i></i><span>♧</span></div><span class="bio-number">01 / RAW POTENTIAL</span><strong>Biomass</strong><small>Wood, agro waste, cashew shells &amp; wet garbage</small></button><div class="bio-link"><i></i><i></i><i></i><span>PREPARE & PELLETIZE</span></div><button class="bio-node" data-bio="1" aria-label="Explore fuel pellets"><div class="bio-object pellets"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="bio-number">02 / DENSIFIED ENERGY</span><strong>Fuel pellets</strong><small>Compact fuel, ready for feeding</small></button><div class="bio-link"><i></i><i></i><i></i><span>FEED & COMBUST</span></div><button class="bio-node" data-bio="2" aria-label="Explore controlled combustion"><div class="bio-object burner"><div class="burner-shell"><div class="fire"><i></i><i></i><i></i></div><span></span></div><div class="burner-pipe"></div></div><span class="bio-number">03 / CONTROLLED RELEASE</span><strong>Process heat</strong><small>Energy for your production line</small></button></div><div class="bio-ground"></div><div class="bio-caption"><span>AN ILLUSTRATED PROCESS · NOT A MACHINE SPECIFICATION</span><button id="bioMotion" aria-pressed="false">Ⅱ Pause motion</button></div></div><div class="bio-details"><div class="bio-detail-index" id="bioIndex">01</div><div><span id="bioTag">START WITH YOUR FEEDSTOCK</span><h3 id="bioTitle">There’s potential in the leftovers.</h3><p id="bioDescription">Wood, agricultural residues, cashew shells and processed wet garbage are all potential fuel inputs. Suitability depends on moisture, size, composition and the preparation required for your selected pellet machine.</p></div><a id="bioExplore" href="#products">Explore pellet machines ↗</a></div><div class="bio-applications"><span>PUT THE HEAT TO WORK</span><button data-application="thermal">Drying & process heating ↗</button><button data-application="food">Food processing ↗</button><button data-application="metal">Furnaces & foundries ↗</button></div></div></section><section class="hero" id="home"><div class="hero-lines" aria-hidden="true"></div><div class="container hero-layout"><div class="hero-copy"><div class="technical-label"><span>PRECISION. PERFORMANCE. PROGRESS.</span><i>EST. 2016</i></div><h2 class="assembly-title">ENGINEERING.<br>AT EVERY<br><span>DEGREE.</span></h2><p class="hero-description">From the thermal core to the final enclosure, every component has a purpose. See a conceptual thermal system come together—then let us engineer a solution around your process.</p><div class="hero__actions"><a href="#contact" class="btn btn--primary">Engineer my solution <span>↗</span></a><button class="film-link" data-src="https://images.hungama.com/008/7D5/001/WhatsApp_Video_2026-06-07_at_10.34.19.mp4"><span>▶</span> Inside the workshop <small>PLAY FILM</small></button></div><div class="hero-footnote"><span class="tiny-cross">+</span> DESIGNED · FABRICATED · COMMISSIONED IN-HOUSE</div></div><div class="hero-engineering"><div class="diagram-top"><span>ENGINEERING, AT EVERY DEGREE.</span><span>AE / 016</span></div><div class="machine-drawing" aria-label="Conceptual industrial thermal system illustration"><svg viewBox="0 0 600 470" role="img" aria-label="Technical illustration of a thermal processing system"><defs><linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d4d9d4"/><stop offset=".4" stop-color="#87948e"/><stop offset="1" stop-color="#44534e"/></linearGradient><linearGradient id="front" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#23352e"/><stop offset=".5" stop-color="#70867b"/><stop offset="1" stop-color="#293b33"/></linearGradient><linearGradient id="heat"><stop stop-color="#f25428"/><stop offset="1" stop-color="#faac65"/></linearGradient><filter id="shadow"><feGaussianBlur stdDeviation="11"/></filter></defs><ellipse cx="311" cy="396" rx="195" ry="25" fill="#000" opacity=".35" filter="url(#shadow)"/><g class="construction-lines" fill="none" stroke="#728d79" stroke-width="1" opacity=".4"><path d="M60 376L347 209 548 323 263 458ZM60 116L347 15 548 130M93 130V390M519 140V387M139 93L139 407M473 99V413" stroke-dasharray="4 6"/><path d="M71 409L285 463M550 343L364 454M88 76L364 7"/><path d="M70 401v16m214 38v16m257-126 16-5"/></g><g class="machine-body assembly-machine"><g class="assembly-part part-frame"><path d="M168 333v55l22 12v-56m213-95v100l20 10v-96" fill="#556b5d" stroke="#99ab9c"/><path d="M363 358v44l24 13v-71" fill="#526a55" stroke="#b1c0a9"/></g><g class="assembly-part part-roof"><path d="M198 161L348 77 469 145 318 231Z" fill="#93a296" stroke="#c1cbbd"/></g><g class="assembly-part part-core"><path d="M198 161v156l120 70V231Z" fill="url(#front)" stroke="#9bad9d"/><path d="M214 178v126l88 50V229Z" fill="#17291f" stroke="#708674"/><path d="M227 206v67l61 36v-67Z" fill="#344c3b" stroke="#789c79"/><path d="M235 219v40l45 26v-40Z" fill="url(#heat)" opacity=".9" class="heat-window"/><path d="M228 283l64 36m-64-29 64 36m-64-28 64 36" stroke="#a7bca5"/></g><g class="assembly-part part-panel"><path d="M318 231L469 145v156l-151 86Z" fill="url(#steel)" stroke="#b6c5b8"/><path d="M328 247l131-76m-131 89 131-76m-131 89 131-76m-131 89 131-76m-131 89 131-76m-131 89 131-76m-131 89 131-76m-131 89 131-76" stroke="#7b8d81" stroke-width="2"/></g><g class="assembly-part part-exhaust"><path d="M355 100V45l24-14 24 14v77" fill="url(#steel)" stroke="#b5c8b7"/><ellipse cx="379" cy="33" rx="24" ry="12" fill="#1c3023" stroke="#b3c5b3"/><path d="M353 59l49 27M353 70l49 28" stroke="#849b88"/></g><g class="assembly-part part-blower"><path d="M171 245l-53 30v71l53 30 54-31v-70Z" fill="#435b43" stroke="#9fb69b"/><path d="M118 275l53 30 54-30m-54 30v71" fill="none" stroke="#a4b899"/><ellipse cx="161" cy="325" rx="20" ry="25" transform="rotate(-25 161 325)" fill="#13271b" stroke="#91aa89"/><path d="M171 305l-10 20 8 19m-26-22 18 3 14 4" stroke="#e0a863" stroke-width="4"/></g></g><g font-family="monospace" font-size="9" fill="#afbeab"><path d="M380 40l66-25h66M228 255H92L50 235M424 238l63-26h72" stroke="#91a585" fill="none"/><circle cx="380" cy="40" r="3" fill="#f68140"/><circle cx="228" cy="255" r="3" fill="#f68140"/><circle cx="424" cy="238" r="3" fill="#f68140"/><text x="451" y="10">EXHAUST SYSTEM</text><text x="12" y="227">THERMAL CORE</text><text x="488" y="202">HEAT TRANSFER</text></g></svg></div><div class="assembly-timeline"><span>01 / FRAME</span><span>02 / CORE</span><span>03 / ENCLOSURE</span><span>04 / READY</span></div><div class="diagram-bottom"><div><i class="signal"></i> PURPOSE-BUILT ENGINEERING<small>Looping concept assembly · Thermal systems</small></div><a href="#products" aria-label="Explore thermal machinery">↗</a></div></div></div><div class="container hero-footer"><span>YOUR PRODUCTION. OUR PRECISION.</span><a href="#stats">SCROLL TO EXPLORE <span>↓</span></a></div></section><section class="stats" id="stats"><div class="container stats__grid"><div class="stat"><div class="stat__num" data-count="2016">2016</div><p>Engineering since</p></div><div class="stat"><div class="stat__num" data-count="16" data-suffix="">16</div><p>Machine models</p></div><div class="stat"><div class="stat__num" data-count="5">5</div><p>Product specialisms</p></div><div class="stat stat-statement"><span>ONE TEAM.<br>FROM DRAWING BOARD<br>TO YOUR FACTORY FLOOR.</span><i>↗</i></div></div></section>
   <!-- ===== ABOUT ===== -->
   <section class="about section" id="about">
     <div class="container about__grid">
@@ -116,7 +68,7 @@
       </div>
       <div class="about__text">
         <span class="eyebrow">About Aryan Engineers</span>
-        <h2 class="section__title">Built on engineering, driven by your results.</h2>
+        <h2 class="section__title">GOOD ENGINEERING.<br><span>GREAT POSSIBILITIES.</span></h2>
         <p>Founded in 2016 in Pimpri-Chinchwad, Pune, Aryan Engineers manufactures premium, cost-effective industrial machinery for food processing, thermal, metallurgical and green-energy applications. From a single machine to a complete turnkey line, we design, fabricate and commission it all under one roof.</p>
         <ul class="about__points">
           <li><strong>Indigenous Development.</strong> Local knowledge and in-house design for machines tuned to Indian operating conditions.</li>
@@ -138,11 +90,38 @@
     <div class="container">
       <div class="section__head">
         <span class="eyebrow">Our Product Range</span>
-        <h2 class="section__title">Machines that power production lines across India</h2>
-        <p class="section__lead">Explore our range of engineered machinery. Tap any product to send a quick enquiry on WhatsApp - we respond fast.</p>
+        <h2 class="section__title">THE RIGHT MACHINE.<br><span>FOR YOUR NEXT MOVE.</span></h2>
+        <p class="section__lead">From a single machine to a complete line. Explore by application, shortlist your equipment, and start a conversation with our engineers.</p>
       </div>
 
-      <div class="filters" id="filters">
+      <div id="categoryGuide" class="category-guide" aria-live="polite"><b>Start with the job you need to do.</b><p>Make fuel, generate heat, dry material, cook food, or handle your process materials. Choose an application below to find the relevant equipment.</p></div>
+
+      <div class="wizard reveal" id="machineWizard" data-wstep="0">
+        <div class="wizard__head"><span>⌖ MACHINE FINDER</span><h3>Not sure where to start? Answer 3 quick taps.</h3></div>
+        <div class="wizard__steps">
+          <div class="wstep is-on" data-step="0"><p class="wstep__q">01 / WHAT DO YOU WANT TO DO?</p>
+            <div class="wopts">
+              <button data-job="fuel">♻ Make fuel from waste</button>
+              <button data-job="heat">🔥 Generate process heat</button>
+              <button data-job="dry">♨ Dry material</button>
+              <button data-job="fry">🍟 Fry or cook food</button>
+              <button data-job="steam">💨 Raise steam</button>
+              <button data-job="metal">🔨 Melt or forge metal</button>
+            </div></div>
+          <div class="wstep" data-step="1"><p class="wstep__q">02 / HOW BIG IS YOUR OPERATION?</p>
+            <div class="wopts"><button data-scale="Small workshop">Small workshop</button><button data-scale="Growing unit">Growing unit</button><button data-scale="Large plant">Large plant</button></div></div>
+          <div class="wstep" data-step="2"><p class="wstep__q">03 / WHAT FUEL DO YOU USE TODAY?</p>
+            <div class="wopts"><button data-fuel="Diesel">Diesel</button><button data-fuel="LPG">LPG</button><button data-fuel="Wood / coal">Wood / coal</button><button data-fuel="None yet">None yet</button></div></div>
+          <div class="wstep" data-step="3"><p class="wstep__q">OUR RECOMMENDATION</p>
+            <div id="wizardResult" class="wizard__result"></div>
+            <div class="wizard__actions">
+              <a id="wizardWA" class="btn btn--primary" target="_blank" rel="noopener">Send this enquiry on WhatsApp</a>
+              <button id="wizardView" type="button">View these machines ↓</button>
+              <button id="wizardRestart" type="button">↺ Start over</button>
+            </div></div>
+        </div>
+        <div class="wizard__bar" aria-hidden="true"><i></i></div>
+      </div><div class="catalog-tools"><label class="search-box"><span>⌕</span><input id="machineSearch" type="search" placeholder="Search machinery…" aria-label="Search machinery"><kbd>/</kbd></label><span id="resultCount" aria-live="polite">16 MACHINES</span></div><div class="filters" id="filters">
         <button class="filter is-active" data-filter="all">All</button>
         <button class="filter" data-filter="thermal">Thermal & Drying</button>
         <button class="filter" data-filter="food">Food Processing</button>
@@ -151,16 +130,17 @@
         <button class="filter" data-filter="process">Process Equipment</button>
       </div>
 
-      <div class="product-grid" id="productGrid"><!-- injected by JS --></div>
+      <div class="product-grid" id="productGrid"></div><p id="emptyProducts" hidden>No machines match your search. Try a different name or category.</p>
     </div>
   </section>
+
 
   <!-- ===== VIDEO GALLERY ===== -->
   <section class="gallery section" id="gallery">
     <div class="container">
       <div class="section__head">
         <span class="eyebrow">See It Run</span>
-        <h2 class="section__title">Our machines, in action</h2>
+        <h2 class="section__title">LESS TALK.<br><span>MORE TORQUE.</span></h2>
         <p class="section__lead">Real footage from real installations. Tap any clip to watch full screen.</p>
       </div>
       <div class="gallery-grid" id="galleryGrid"><!-- injected by JS --></div>
@@ -172,7 +152,7 @@
     <div class="container">
       <div class="section__head section__head--light">
         <span class="eyebrow">Why Aryan Engineers</span>
-        <h2 class="section__title">A manufacturing partner, not just a supplier</h2>
+        <h2 class="section__title">BUILT AROUND<br><span>YOUR AMBITION.</span></h2>
       </div>
       <div class="why__grid">
         <div class="why__card">
@@ -219,29 +199,28 @@
     </div>
   </section>
 
-  <!-- ===== TESTIMONIALS ===== -->
-  <section class="testimonials section">
-    <div class="container">
-      <div class="section__head">
-        <span class="eyebrow">What Clients Say</span>
-        <h2 class="section__title">Results our customers feel</h2>
+<section class="process section"><div class="container"><div class="section__head"><span class="eyebrow">04 / HOW WE WORK</span><h2 class="section__title">FROM AN IDEA.<br><span>TO AN EVERYDAY ADVANTAGE.</span></h2></div><div class="process-grid"><article><span>01</span><h3>Understand.</h3><p>Your material, capacity, fuel and floor space. We start with the realities of your operation.</p></article><article><span>02</span><h3>Engineer.</h3><p>A machine configured around your application, with design and fabrication under one roof.</p></article><article><span>03</span><h3>Commission.</h3><p>Assembly, installation and commissioning connect the drawing board to your production line.</p></article><article><span>04</span><h3>Support.</h3><p>Stay connected to the team behind your machine for service, spares and future upgrades.</p></article></div></div></section>
+  <!-- ===== SAVINGS CALCULATOR ===== -->
+  <section class="savings section" id="savings">
+    <div class="container savings__grid">
+      <div class="savings__copy">
+        <span class="eyebrow">05 / THE BUSINESS CASE</span>
+        <h2 class="section__title">BURN SMARTER.<br><span>BANK THE DIFFERENCE.</span></h2>
+        <p>Biomass pellets typically deliver heat at a fraction of the cost of fossil fuels. Slide your monthly fuel spend and see what switching could put back in your pocket.</p>
+        <p class="savings__note">INDICATIVE ESTIMATE · ACTUAL SAVINGS DEPEND ON FUEL QUALITY, PROCESS AND RUNNING HOURS</p>
       </div>
-      <div class="testi" id="testi">
-        <div class="testi__track" id="testiTrack">
-          <figure class="testi__card">
-            <blockquote>"Switching to the Aryan pellet-fired burner cut our fuel cost sharply and the support team is always a call away. The machine has run reliably since day one."</blockquote>
-            <figcaption><strong>Production Head</strong><span>Snack &amp; Namkeen Unit, Maharashtra</span></figcaption>
-          </figure>
-          <figure class="testi__card">
-            <blockquote>"The hot air dryer was custom-built for our capacity and drying needs. Output quality improved and downtime is almost nil."</blockquote>
-            <figcaption><strong>Plant Manager</strong><span>Agro Processing, Gujarat</span></figcaption>
-          </figure>
-          <figure class="testi__card">
-            <blockquote>"From design to commissioning everything was handled in-house. Honest engineering and prompt service - exactly what a growing plant needs."</blockquote>
-            <figcaption><strong>Founder</strong><span>Food Manufacturing, Pune</span></figcaption>
-          </figure>
-        </div>
-        <div class="testi__dots" id="testiDots"></div>
+      <div class="savings__calc">
+        <label class="calc-field">CURRENT FUEL
+          <select id="calcFuel">
+            <option value="Diesel">Diesel</option>
+            <option value="LPG">LPG</option>
+            <option value="Furnace Oil">Furnace Oil</option>
+            <option value="Coal">Coal</option>
+          </select></label>
+        <label class="calc-field">MONTHLY FUEL SPEND <output id="calcSpendOut" for="calcSpend">₹ 3,00,000</output>
+          <input type="range" id="calcSpend" min="25000" max="2500000" step="25000" value="300000" aria-label="Monthly fuel spend in rupees"></label>
+        <div class="savings__result"><span>ESTIMATED ANNUAL SAVINGS WITH PELLETS</span><strong id="calcResult">₹ 0</strong><small>Most systems pay for themselves in 12 to 24 months.</small></div>
+        <a id="calcWA" class="btn btn--primary" target="_blank" rel="noopener">Get an exact assessment ↗</a>
       </div>
     </div>
   </section>
@@ -250,7 +229,7 @@
   <section class="cta-banner">
     <div class="container cta-banner__inner">
       <div>
-        <h2>Have a project in mind?</h2>
+        <h2>LET’S BUILD YOUR NEXT.</h2>
         <p>Tell us your application and capacity. We will engineer the right machine for you.</p>
       </div>
       <div class="cta-banner__actions">
@@ -265,15 +244,15 @@
     <div class="container contact__grid">
       <div class="contact__info">
         <span class="eyebrow">Get In Touch</span>
-        <h2 class="section__title">Request a quote or consultation</h2>
+        <h2 class="section__title">BIG PLANS?<br><span>LET’S TALK DETAILS.</span></h2>
         <p>Share a few details and our team will get back with the right solution, specs and pricing.</p>
         <ul class="contact__list">
-          <li><span>&#128205;</span><div><strong>Visit Us</strong>Second Floor, Flat No. 7B, Wing A-2, Pune-Mumbai Express Highway, Jyotiba Nagar, Ravet, Pimpri Chinchwad - 412101, Pune, Maharashtra</div></li>
+          <li><span>&#128205;</span><div><strong>Visit Us</strong>GAT NO 77, near Jotiba Mandir, Kadolkar Colony, Jotiba Nagar, Talwade, Haveli, Pimpri-Chinchwad, Maharashtra 411062</div></li>
           <li><span>&#128222;</span><div><strong>Call Us</strong><a href="tel:+919075416505">+91 90754 16505</a> &nbsp;/&nbsp; <a href="tel:+919209059160">+91 92090 59160</a></div></li>
           <li><span>&#9993;</span><div><strong>Email</strong><a href="mailto:aryanengineers195@gmail.com">aryanengineers195@gmail.com</a></div></li>
         </ul>
       </div>
-      <form class="contact__form" id="quoteForm" novalidate>
+      <form class="contact__form" id="quoteForm" >
         <div class="field">
           <label for="name">Full Name *</label>
           <input type="text" id="name" name="name" required placeholder="Your name" />
@@ -281,7 +260,7 @@
         <div class="field-row">
           <div class="field">
             <label for="phone">Phone *</label>
-            <input type="tel" id="phone" name="phone" required placeholder="Mobile number" />
+            <input type="tel" id="phone" name="phone" required pattern="[+0-9 ()-]{7,20}" placeholder="Mobile number" />
           </div>
           <div class="field">
             <label for="email">Email</label>
@@ -297,11 +276,12 @@
           <textarea id="message" name="message" rows="4" placeholder="Capacity, feedstock, application, timeline..."></textarea>
         </div>
         <button type="submit" class="btn btn--primary btn--block btn--lg">Send Enquiry on WhatsApp</button>
-        <p class="form__note" id="formNote">We typically reply within a few hours on working days.</p>
+        <p class="form__note" id="formNote" role="status">We typically reply within a few hours on working days.</p>
       </form>
     </div>
   </section>
 
+</main>
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container footer__grid">
@@ -328,7 +308,7 @@
       </div>
       <div class="footer__col">
         <h4>Reach Us</h4>
-        <p>Ravet, Pimpri Chinchwad<br />Pune - 412101, Maharashtra</p>
+        <p>GAT NO 77, near Jotiba Mandir,<br />Kadolkar Colony, Jotiba Nagar,<br />Talwade, Haveli, Pimpri-Chinchwad,<br />Maharashtra 411062</p>
         <p><a href="tel:+919075416505">+91 90754 16505</a></p>
         <p><a href="mailto:aryanengineers195@gmail.com">aryanengineers195@gmail.com</a></p>
       </div>
@@ -361,6 +341,6 @@
     <video id="lightboxVideo" controls playsinline></video>
   </div>
 
-  <script src="js/main.js"></script>
+  <dialog id="machineDialog"><button id="closeMachine" aria-label="Close machine details">×</button><div id="machineDetails"></div></dialog><div class="shortlist-bar" id="shortlistBar" hidden><span><b id="shortlistCount">0</b> machines shortlisted</span><button id="clearShortlist">Clear</button><a href="#contact" id="enquireShortlist">Discuss shortlist ↗</a></div><script src="js/main.js?v=2"></script><script src="js/studio.js?v=2"></script><script src="js/biofuel.js?v=3"></script><script src="js/product-visuals.js?v=2"></script><script src="js/interactive.js?v=2"></script><script src="js/story.js?v=2"></script>
 </body>
 </html>
