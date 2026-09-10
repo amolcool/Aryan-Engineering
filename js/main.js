@@ -211,7 +211,7 @@
 
   /* ---------- Scroll reveal ---------- */
   function initReveal() {
-    var els = document.querySelectorAll(".section, .pcard, .gtile, .industry, .why__card, .about__media, .about__text");
+    var els = document.querySelectorAll(".section, .pcard, .gtile, .industry, .why__card, .about__media, .about__text, .wizard");
     els.forEach(function (e) { e.classList.add("reveal"); });
     if (!("IntersectionObserver" in window)) { els.forEach(function (e) { e.classList.add("in"); }); return; }
     var io = new IntersectionObserver(function (en) {

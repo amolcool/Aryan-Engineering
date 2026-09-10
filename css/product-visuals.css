@@ -147,3 +147,4 @@
 .brand__text,.brand__text>span{background-image:linear-gradient(110deg,var(--ink) 42%,#ed713b 50%,#f2b76b 53%,var(--ink) 61%);background-size:260% 100%;background-position:185% 0;-webkit-background-clip:text;background-clip:text;color:transparent;animation:brandShine 4.6s linear infinite}
 @keyframes brandShine{0%,62%{background-position:185% 0}100%{background-position:-75% 0}}
 .brand:hover .brand__text,.brand:hover .brand__text>span{animation-duration:1.2s}
+.footer__brand img{background:none;padding:0;width:56px;border-radius:12px}
