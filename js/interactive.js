@@ -82,6 +82,8 @@
       out.textContent = "₹ " + m.toLocaleString("en-IN");
       var annual = m * 12 * SAVE[fuel.value];
       animateTo(annual);
+      var pill = document.getElementById("savingsPill");
+      if (pill) pill.textContent = "Save up to " + fmtLakh(annual).replace("\u20b9 ", "") + "/yr";
       wa.href = WA + encodeURIComponent(
         "Hi Aryan Engineers, I currently spend about ₹" + m.toLocaleString("en-IN") +
         " per month on " + fuel.value +

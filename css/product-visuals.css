@@ -133,3 +133,5 @@
 @keyframes savPulse{0%{opacity:.9;transform:scale(1)}70%,100%{opacity:0;transform:scale(1.14)}}
 .bio-intro-actions{flex-wrap:wrap}
 @media(max-width:650px){.savings-link{font-size:12px!important;padding:9px 14px}}
+.savings-link em{font-style:normal}
+@media(max-width:650px){.bio-node{column-gap:22px}.bio-node .bio-number{margin-bottom:8px}.bio-node small{line-height:1.7}}
