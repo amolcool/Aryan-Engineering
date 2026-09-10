@@ -113,3 +113,8 @@
 }
 .assembly-part{outline:none;cursor:pointer}
 .assembly-part:focus-visible{outline:2px dashed #ed713b;outline-offset:4px}
+
+/* 3D cashew-shell + wet-waste clusters in the biomass illustration */
+.feed-extra{position:absolute;inset:0;pointer-events:none;overflow:visible}
+.feed-extra g{transform-box:fill-box;animation:biomassFloat 6.5s ease-in-out infinite}
+.feed-extra .fx-waste{animation-delay:-3s;animation-duration:7.2s}
