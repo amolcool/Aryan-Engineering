@@ -118,3 +118,7 @@
 .feed-extra{position:absolute;inset:0;pointer-events:none;overflow:visible}
 .feed-extra g{transform-box:fill-box;animation:biomassFloat 6.5s ease-in-out infinite}
 .feed-extra .fx-waste{animation-delay:-3s;animation-duration:7.2s}
+.feed-extra .steam{transform-box:fill-box;animation:steamRise 3.2s ease-in-out infinite;opacity:0}
+.feed-extra .steam.s2{animation-delay:-1.6s}
+@keyframes steamRise{0%{opacity:0;translate:0 7px}35%{opacity:.5}100%{opacity:0;translate:0 -11px}}
+.feed-extra{z-index:2}
