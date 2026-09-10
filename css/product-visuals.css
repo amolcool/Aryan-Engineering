@@ -142,3 +142,8 @@
 @keyframes savSweep{0%{background-position:180% 0}45%,100%{background-position:-80% 0}}
 @keyframes savGlow{0%,100%{box-shadow:0 0 0 0 #ed713b00;border-color:#6d8259}40%{box-shadow:0 0 24px 3px #ed713b59;border-color:#ed713b}}
 @keyframes rupeeBob{0%,55%,90%,100%{transform:none}65%{transform:translateY(-4px) scale(1.2)}78%{transform:translateY(1px)}}
+
+/* brand wordmark shine so the name sticks */
+.brand__text,.brand__text>span{background-image:linear-gradient(110deg,var(--ink) 42%,#ed713b 50%,#f2b76b 53%,var(--ink) 61%);background-size:260% 100%;background-position:185% 0;-webkit-background-clip:text;background-clip:text;color:transparent;animation:brandShine 4.6s linear infinite}
+@keyframes brandShine{0%,62%{background-position:185% 0}100%{background-position:-75% 0}}
+.brand:hover .brand__text,.brand:hover .brand__text>span{animation-duration:1.2s}
